@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import patch, Mock
-from cli import CLI
+from src.cli import CLI
 
 def test_valid_followed_by_invalid_input() -> None:
     mock_logger = Mock()

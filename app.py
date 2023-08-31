@@ -1,4 +1,4 @@
-from cli import CLI
+from src.cli import CLI
 
 if __name__ == "__main__":
     calc = CLI()

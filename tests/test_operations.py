@@ -1,8 +1,8 @@
 import pytest
 from unittest.mock import patch, Mock
-from operations import Operator
-from cli import CLI
-from calculator import Calculator
+from src.operations import Operator
+from src.cli import CLI
+from src.calculator import Calculator
 
 def test_add() -> None:
     calculator = Calculator()

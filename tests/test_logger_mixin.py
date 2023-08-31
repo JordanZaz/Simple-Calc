@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import patch, Mock, call
-from cli import CLI
+from src.cli import CLI
 
 def test_cli_logger_called_correctly() -> None:
     mock_logger = Mock()
