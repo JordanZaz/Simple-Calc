@@ -1,7 +1,7 @@
 from typing import Union
-from src.calculator import Calculator
-from src.operations import Operations, Operator
-from src.logger_mixin import LoggerMixin
+from .calculator import Calculator
+from .operations import Operations, Operator
+from .logger_mixin import LoggerMixin
 
 
 class CLI(LoggerMixin):

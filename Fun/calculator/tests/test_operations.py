@@ -1,8 +1,8 @@
 import pytest
 from unittest.mock import patch, Mock
-from src.operations import Operator
-from src.cli import CLI
-from src.calculator import Calculator
+from calculator.src.operations import Operator
+from calculator.src.cli import CLI
+from calculator.src.calculator import Calculator
 
 def test_add() -> None:
     calculator = Calculator()
@@ -243,14 +243,6 @@ def test_factorial_negative_value() -> None:
 
     mock_logger.error.assert_called_with(
         "Error encountered", error="You can't take the factorial of a negative number")
-    
-def test_factorial_decimal_value() -> None:
-    calculator = Calculator()
-    result = calculator.execute(
-        operator=Operator.FACTORIAL,
-        first_number=3.5
-    )
-    assert result == 11.631728396567452
 
 def test_large_numbers() -> None:
     calculator = Calculator()

@@ -1,7 +1,7 @@
 import math
 from enum import Enum
 from typing import Callable
-from src.logger_mixin import LoggerMixin
+from .logger_mixin import LoggerMixin
 
 class Operator(Enum):
     ADD = "+"

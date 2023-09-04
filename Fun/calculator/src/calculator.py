@@ -1,6 +1,6 @@
-from src.logger_mixin import LoggerMixin
+from .logger_mixin import LoggerMixin
 from typing import Optional
-from src.operations import Operations, Operator
+from .operations import Operations, Operator
 
 
 class Calculator(LoggerMixin):
